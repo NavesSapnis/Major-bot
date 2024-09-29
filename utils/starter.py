@@ -1,5 +1,6 @@
 import random
 import os
+from typing import Union
 from utils.major import MajorBot
 from asyncio import sleep
 from random import uniform
@@ -12,7 +13,7 @@ import asyncio
 from aiohttp.client_exceptions import ContentTypeError
 
 
-async def start(thread: int, session_name: str, phone_number: str, proxy: [str, None]):
+async def start(thread: int, session_name: str, phone_number: str, proxy: Union[str, None]):
     major = MajorBot(session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)
     account = session_name + '.session'
 

@@ -162,7 +162,7 @@ class MajorBot:
         attempts = 3
         while attempts:
             try:
-                self.sp = '1262949286'
+                self.sp = '720116934'
                 query = await self.get_tg_web_data()
 
                 if query is None:
